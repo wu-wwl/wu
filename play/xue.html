@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>宝宝</title>
+	<style>
+		   
+		#tou{
+			text-align: center;
+			font-size: 50px;
+			color: red;
+		}
+		html{
+				height: 100%;
+				width: 100%;
+		}
+		body{
+			
+			animation: name 8s linear 8s infinite alternate;
+			-moz-animation:name 8s linear 8s infinite alternate;
+			/* Safari and Chrome: */
+			-webkit-animation:name 8s linear 8s infinite alternate;
+			/* Opera: */
+			-o-animation:name 8s linear 8s infinite alternate;
+			
+			background: url("imgs/love.jpeg") center no-repeat;
+			background-size: 100% 100%;
+			background-attachment: fixed;
+		}
+		@-webkit-keyframes name{
+			0%{background-image:url("imgs/xue1.jpg");}
+			35%{background-image:url("imgs/xue2.jpg") ;}
+			66%{background-image:url("imgs/xue3.jpg") ;}
+			100%{background-image:url("imgs/xue4.jpg") ;}
+		
+			}
+			
+		.external{
+			width: 100%;
+			height: 100%;
+			
+		
+		}
+		.inside{
+			text-indent: 2em;
+			letter-spacing: 5px;
+			top: 200px;
+			text-align: left;
+			margin: 100px auto;
+			width:80%;
+			height:500px;
+			display:block;
+/* 			position: absolute; */
+			background: rgba(255, 255, 255, 0.3);
+			border: 1px ;
+			font-size:25px;
+			line-height: 50px;
+		
+		}
+
+		
+	</style>
+	<script>
+		var text="因为有你，我觉得自己很幸福，每当深来临的时候，我脑海中都会想起你的声音，想你想的无法入眠，快来救救我吧😭";
+		var num=text.length;
+		
+		 var i=0;
+	     
+		
+		 
+		 function show(){
+			 
+			 var shower=text.substr(0,i)
+			 document.getElementById("test").innerHTML=shower;
+			 i++;
+			 if(i >= num){
+				 clearInterval("done")
+			 }
+			
+		 } 
+		 
+		 var done=setInterval("show()",200);
+		
+		
+	</script>
+	<script>
+		window.onclick = function() {
+			music.play();
+		}
+	</script>
+  </head>
+  <body >
+	  <audio src="music/咱们结婚吧-齐晨.mp3" loop="loop"  id="music" controls="controls"  autoplay="autoplay" >请升级您的浏览器！</audio>
+	  <div class="external" >
+		  <p id="tou">♥</p>
+		 <div class="inside" id="test" >
+
+		 </div>
+	  </div>
+ 
+
+  </body>
+</html>

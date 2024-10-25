@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>给你一封小情书😊</title>
+	<style>
+		   
+		#tou{
+			text-align: center;
+			font-size: 50px;
+			color: red;
+		}
+		html{
+				height: 100%;
+				width: 100%;
+		}
+		body{
+			
+			animation: name 8s linear 8s infinite alternate;
+			-moz-animation:name 8s linear 8s infinite alternate;
+			/* Safari and Chrome: */
+			-webkit-animation:name 8s linear 8s infinite alternate;
+			/* Opera: */
+			-o-animation:name 8s linear 8s infinite alternate;
+			
+			background: url("imgs/love.jpeg") center no-repeat;
+			background-size: 100% 100%;
+			background-attachment: fixed;
+		}
+		@-webkit-keyframes name{
+			0%{background-image:url("imgs/love.jpeg");}
+			35%{background-image:url("imgs/love.jpeg") ;}
+			66%{background-image:url("imgs/love.jpeg") ;}
+			100%{background-image:url("imgs/love.jpeg") ;}
+		
+			}
+			
+		.external{
+			width: 100%;
+			height: 100%;
+			
+		
+		}
+		.inside{
+			text-indent: 2em;
+			letter-spacing: 5px;
+			top: 200px;
+			text-align: left;
+			margin: 100px auto;
+			width:80%;
+			height:700px;
+			display:block;
+/* 			position: absolute; */
+			background: rgba(255, 255, 255, 0.3);
+			border: 1px ;
+			font-size:25px;
+			line-height: 50px;
+		
+		}
+
+		
+	</style>
+	<script>
+		var text="小莹，我对你的喜欢呢！是一种莫名的感觉，我感觉说你好看、漂亮、贤惠，还会做饭🤗但是我感觉都不足以表达出来我对这种喜欢的感觉，我感觉我已经喜欢的超过了这中感觉。我也可以感觉出来你对我的喜欢，但是又很隐蔽，但我还是能感觉出来，所以我现在开始对你的好，都是肆无忌惮的对你好，如果，就假如，最后真的没走在一块，我也不会后悔，谁让我喜欢过呢😁所以我一定不要错过，半夜醒来的时候，耳边总会想起你白天说的话，我要记录下来，因为我怕到白天，我想说的却不知道如何开口了，现在是23-03-26 早上5:02记录完毕😂";
+		var num=text.length;
+		
+		 var i=0;
+	     
+		
+		 
+		 function show(){
+			 
+			 var shower=text.substr(0,i)
+			 document.getElementById("test").innerHTML=shower;
+			 i++;
+			 if(i >= num){
+				 clearInterval("done")
+			 }
+			
+		 } 
+		 
+		 var done=setInterval("show()",200);
+		
+		
+	</script>
+	<script>
+		window.onclick = function() {
+			music.play();
+		}
+	</script>
+  </head>
+  <body >
+	  <audio src="music/咱们结婚吧-齐晨.mp3" loop="loop"  id="music" controls="controls" autoplay="autoplay" >请升级您的浏览器！</audio>
+	  <div class="external" >
+		  <p id="tou">♥</p>
+		 <div class="inside" id="test" >
+
+		 </div>
+	  </div>
+ 
+
+  </body>
+</html>

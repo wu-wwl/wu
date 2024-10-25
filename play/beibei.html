@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>图片馆</title>
+	<style>
+		body{
+			
+			animation: name 8s linear 8s infinite alternate;
+			-moz-animation:name 8s linear 8s infinite alternate;
+				/* Safari and Chrome: */
+				-webkit-animation:name 8s linear 8s infinite alternate;
+				/* Opera: */
+				-o-animation:name 8s linear 8s infinite alternate;
+				opacity: 0.3;
+				
+		}
+		
+		.tou{
+			font-size: 50px;
+			text-align: center;
+			
+		}
+		.wei{
+			
+			width: 80%;
+			height: 666px;
+			margin: 100px auto;
+			border: 1px ;
+			
+			background-repeat: repeat-x;
+			
+		}
+			.ul{
+				
+				text-align: left;
+				list-style: none;
+				
+				
+			}
+			li,img,video{
+				width: 200px;
+				height: 200px;
+				display: inline;
+				
+			}
+			
+			
+			img:first-of-type:hover{
+			content:url("imgs/dian.jpg")
+			}
+			@-webkit-keyframes name{
+				0%{opacity: 0.9;background-image:url("imgs/beibei1.jpg");}
+				25%{background-image:url("imgs/beibei2.jpg") ;}
+				50%{background-image:url("imgs/beibei3.jpg") ;}
+				80%{background-image:url("imgs/beibei4.jpg") ;}
+				100%{background-image:url("imgs/beibei1.jpg") ;}
+			}
+	</style>
+	
+  </head>
+  <body >
+	  <div class="tou">
+		<label>北北的图片合集</label>
+		<audio src="music/杨小壮 - 最后的人.mp3" loop="loop" controls="controls" autoplay="autoplay" >请升级您的浏览器！</audio>
+		
+		
+	  </div>
+	 
+	  <div class="wei" >
+		<ul class="ul">
+			
+			<li><img src="imgs/beibei1.jpg"/></li>
+			<li><img src="imgs/beibei2.jpg"/></li>
+			<li><img src="imgs/beibei3.jpg"/></li>
+			<li><img src="imgs/beibei4.jpg"/></li>
+		
+		<!-- 	<li><video src="music/123.mp4" controls>您的浏览器不支持
+		</video></li> -->
+			<li></li>
+			
+		</ul>
+	   </div>
+ 
+
+  </body>
+</html>
