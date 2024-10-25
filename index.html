@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+  function aa(){
+  	document.getElementById("demo").innerHTML=Date();
+  }
+    </script>
+    <title></title><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>私人资源登陆</title>
+	<script>
+	
+		  function login() {
+			    window.location.href="collection.html"
+			  alert("登陆成功！");
+		    }
+	</script>
+	<style>
+		fieldset {
+			text-align: center;
+			margin: 200px auto;
+			background-color: aqua;
+			position: relative;
+		}
+		.box2 {
+		            margin: 10px auto;
+		            text-align: center;
+		            line-height: 30px;
+		            background:lightcyan ;
+					background-repeat: no-repeat;
+		            cursor: pointer;
+		            position: relative;
+					opacity: 0.9;
+		        }
+		        .box2:after,.box2:before {
+		            content: '';
+		            display: block;
+		            position: absolute;
+		            border: 5px transparent solid;
+		            width: 0;
+		            height: 0;
+		            box-sizing: border-box;
+		        }
+		        .box2:after {
+		            left: 0;
+		            top: 0;
+		            transition:border-color 0s ease-in 0.8s,width 0.2s ease-in 0.6s,height 0.2s ease-in 0.4s;
+		        }
+		        .box2:before {
+		            right: 0;
+		            bottom: 0;
+		            transition:border-color 0s ease-in 0.4s,width 0.2s ease-in 0.2s,height 0.2s ease-in 0s;
+		        }
+		        .box2:hover:after,.box2:hover:before {
+		            height:100%;
+		            width:100%;
+		        }
+		        .box2:hover:after {
+		            border-right-color:#367dff;
+		            border-top-color:#367dff;
+		            transition:width 0.2s ease-out 0s,height 0.2s ease-out 0.2s;
+		        }
+		        .box2:hover:before {
+		            border-left-color:#367dff;
+		            border-bottom-color:#367dff;
+		            transition:border-color 0s ease-out 0.8s,width 0.2s ease-out 0.4s,height 0.2s ease-out 0.6s;
+		        }
+	</style>
+  </head>
+  <body>
+	  <div class="login" onclick="login()" style="width: 50px;height: 50px;border: 1px ;top: 0px; right;"></div>
+	   <fieldset>
+	  
+		 <form style="margin: 100px auto;" method="POST" action="" >
+			 <tr>
+				<td ><label for="username">用户名：</label></td>
+				<td><input type="text" name="username"  id="username" placeholder="name" size="20" maxlength="20" /></td>
+			<br />
+			<br />
+			<br />
+			</tr>
+			<tr>
+				<td><label for="password">密&nbsp;&nbsp;&nbsp;码：</label></td>
+				<td><input type="password" placeholder="pwd"/></td>
+			</tr>
+			
+	     </form>
+		 <div class="box2"  >登陆
+	     </div>
+	  </fieldset>
+  </body>
+</html>
+
